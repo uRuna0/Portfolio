@@ -1,0 +1,207 @@
+@charset "UTF-8";
+#header, .wrapper {
+	max-width: 960px;
+	padding: 0 4%
+}
+#news dd, #news dt {
+	border-bottom: 1px solid #c8c8c8;
+	padding: 15px
+}
+#contact dl, #header, #header ul, #news dl, #works ul,#bordgame ul {
+	display: flex
+}
+#contact .button input, #footer {
+	background-color: #24292e;
+	color: #fff
+}
+#contact .button, #footer, .sec-title {
+	text-align: center
+}
+html {
+	font-size: 100%
+}
+#header li a, body {
+	color: #24292e
+}
+a {
+	text-decoration: none
+}
+img {
+	max-width: 100%
+}
+li {
+	list-style: none
+}
+.wrapper {
+	margin: 0 auto 130px;
+	font-size: .9rem
+}
+.site-title {
+	line-height: 1px
+}
+.sec-title {
+	font-size: 1.5rem;
+	margin-bottom: 65px
+}
+#header {
+	justify-content: space-between;
+	align-items: center;
+	height: 270px;
+	margin: 0 auto
+}
+#header ul {
+	padding: 10px 0
+}
+#header li {
+	font-size: .9rem;
+	margin-left: 30px
+}
+#header li a:hover {
+	opacity: .7
+}
+#header li img.icon {
+	width: 20px
+}
+#mainvisual {
+	margin-bottom: 80px
+}
+#mainvisual img {
+	width: 100%;
+	max-width: 1920px;
+	height: 420px;
+	object-fit: cover
+}
+#about li:first-child, #about ul {
+	margin-bottom: 30px
+}
+#about p {
+	text-align: justify
+}
+#works ul {
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 50px
+}
+#works li {
+	width: 31%;
+	margin-bottom: 23px
+}
+#bordgame ul {
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 50px
+}
+#bordgame li {
+	width: 31%;
+	margin-bottom: 23px
+}
+#news dl {
+	flex-wrap: wrap;
+	border-top: 1px solid #c8c8c8
+}
+#news dt {
+	width: 20%
+}
+#news dd {
+	width: 80%
+}
+#contact dl {
+	flex-wrap: wrap;
+	margin-bottom: 20px
+}
+#contact dt {
+	width: 15%
+}
+#contact dd {
+	width: 85%;
+	margin-bottom: 10px
+}
+#contact dd input, #contact dd textarea {
+	width: 100%;
+	border: 1px solid #c8c8c8;
+	padding: 10px
+}
+#contact dd textarea {
+	height: 10rem
+}
+#contact .button input {
+	width: 200px;
+	padding: 15px 0;
+	border: 1px solid #24292e
+}
+#contact .button input:hover {
+	background: #fff;
+	color: #24292e
+}
+@media screen and (max-width:600px) {
+	.wrapper {
+		margin-bottom: 70px
+	}
+	.site-title {
+		margin-top: 20px
+	}
+	.sec-title {
+		margin-bottom: 40px
+	}
+	#header li, #header li:first-child {
+		margin-left: 0
+	}
+	#header {
+		max-width: 100%;
+		height: auto;
+		flex-direction: colum
+	}
+	#header li {
+		font-size: .8rem
+	}
+	#contact dl, #news dl, #works ul  {
+		flex-direction: column
+	}
+	#contact dd, #contact dt, #works li {
+		width: 100%
+	}
+	#news dt {
+		width: 100%;
+		border-bottom: none;
+		padding-bottom: 0
+	}
+	#news dd {
+		width: 100%;
+		padding-top: 0
+	}
+}
+#footer {
+	font-size: .5rem;
+	padding: 10px 20px
+}
+.menu-test>li {
+	position: relative
+}
+.menu-test .sub-menu {
+	display: none;
+	top: 40px;
+	position: absolute
+}
+.loader-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 224, 243, 0.9);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 9999;
+}
+/* SVGのアニメーションが終わった後のフェードアウトアニメーション */
+.loader-container.load-animate {
+	animation: fadeOut 0.6s forwards;
+}
+.loader-overlay svg path {
+	fill: #fff
+}
+.abouts {
+    margin-left: 30px; /* 左に10pxのスペースを追加 */
+    font-size: 130%
+}
